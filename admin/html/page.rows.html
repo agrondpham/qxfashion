@@ -1,0 +1,15 @@
+<tr>
+    <td>{$page->name}</td>
+    <td>{$page->type}</td>
+    <td>{$page->title}</td>
+    <td><input type="text" class="input_cart" name="page[{$page->id}" value="{$page->order}"/></td>
+    <td><select name="status[{$page->id}]">
+            <option value="{$page->status}">{$page->status}</option>
+            <option disabled>-----</option>
+            <option value="Active">Active</option>
+            <option value="InActive">InActive</option>
+        </select>
+    </td>
+    <td>{$page->link}</td>
+    <td>Remove</td>
+</tr>

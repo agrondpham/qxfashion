@@ -1,0 +1,68 @@
+/**
+ * @version   3.2.8 August 1, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+/* Core */
+body {color:#7b7b7b;}
+
+body.cssstyle-style1{
+	background:url(../images/body/body-bg.jpg) top left repeat;}
+	
+.wrapper-bg{
+	background:url(../images/body/wrapper-bg.jpg) top center no-repeat;}
+
+
+/*==HEADER====*/
+
+
+
+/*===NAVIGATION===*/
+
+#rt-menu{
+	background:url(../images/menu-bg-tile.jpg) top left repeat-x;
+	}
+		
+	
+/*===SHOWCASE====*/
+
+#rt-showcase{
+	background:#e3e3e3;
+}
+
+.menu-styles #rt-showcase{
+	background:#fff;
+}
+
+
+/*====FEATURE======*/
+
+	
+#rt-feature{
+	background:#040404;
+	}
+
+
+/*====MAIN====*/
+
+#rt-main{
+	background:#fafafa;}
+	
+#rt-main .rt-container{
+	background:none;}
+	
+
+	
+/*====BOTTOM====*/
+
+#rt-bottom{
+	color:#7b7b7b;
+	background:url(../images/botom-bg-tile.jpg) top left repeat-x #fff;
+	}
+	
+/*====FOOTER===*/
+
+#rt-footer {
+	background:none;}
+	

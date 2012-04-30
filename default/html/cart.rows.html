@@ -1,0 +1,10 @@
+<tr valign="top" class="sectiontableentry1">
+    <td>{$objProduct->name}</td>
+    <td>{$original_price}$</td>
+    <td>{$objProduct->price}$</td>
+    <td>{$objProduct->discount}%</td>
+    <td><input class="input_cart" type="text" name="quantity[{$objProduct->id}]" value="{$objCart->quantity}"/></td>
+    <td>
+        <a href="cart.remove.php?id={$objProduct->id}">Remove</a>
+    </td>
+</tr>

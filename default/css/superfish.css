@@ -1,0 +1,45 @@
+/************ sf-menu **********************/	
+.sf-menu {
+	padding:40px 0 23px 64px;
+	position:relative;
+	float:left;
+	z-index:3; 
+}
+.sf-menu li {
+	position:relative; 
+}
+.sf-menu > li{
+	float:left;
+	margin-right:34px;
+}
+
+.sf-menu > li > a {
+	display:inline-block;
+	font-family: "Handwriting - Dakota";
+	color:#fff;
+	font-size:22px;
+	line-height:22px;
+	text-transform:uppercase;
+}
+
+.sf-menu > li:hover > a, .sf-menu > li.sfHover > a, .sf-menu > li.current > a{
+	color:#f92e37;
+	font-size: 20px;
+}
+
+.sf-menu ul {
+	position:		absolute;
+	width:			159px; /* left offset of submenus need to match (see below) */
+	background:none;
+	padding: 0px;
+	z-index:200;
+	display:none;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			-3px;
+	top:			27px; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfH

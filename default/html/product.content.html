@@ -1,0 +1,172 @@
+<div class="mb8-sa4" id="rt-main">
+    <div class="rt-container">
+        <div class="rt-grid-8 ">
+            <div class="rt-block">
+	            <div id="rt-mainbody">
+					<div class="component-content">
+						<!-- Start K2 Item Layout -->
+						<span id="startOfPageId34"></span>
+						<div class="itemView blog" id="k2Container">
+							<!-- Plugins: BeforeDisplay -->
+							
+							<!-- K2 Plugins: K2BeforeDisplay -->
+								
+							<!-- Item title -->
+							<h2 class="itemTitle" style="visibility: visible;" id=""><span></span>{$objProduct->name}</h2>
+	  
+							<div class="itemHeader">
+
+								<!-- Date created -->
+								<span class="itemDateCreated">{$objProduct->modifiedDate}</span>
+							</div>
+
+							<!-- Plugins: AfterDisplayTitle -->
+						  
+							<!-- K2 Plugins: K2AfterDisplayTitle -->
+						  
+							<div class="itemToolbar">
+								<div class="clr"></div>
+							</div>
+
+							<div class="itemBody">
+
+							<!-- Plugins: BeforeDisplayContent -->
+
+							<!-- K2 Plugins: K2BeforeDisplayContent -->
+
+									<!-- Item Image -->
+							<div class="itemImageBlock">
+								<span class="itemImage">
+									<a title="Click to preview image" href="image.php?id={$objProduct->image_id}" rel="{handler: 'image'}" class="modal">
+										<img style="width:880px; height:auto;" alt="{$objProduct->name}" src="image.php?id={$objProduct->image_id}"/>
+									</a>
+								</span>
+								<div class="clr"></div>
+							</div>
+						<div class="itemAdditional">
+                            <!-- Item category -->
+							<div class="itemCategory">{$objProduct->type}</div>
+                            <!-- Item Author -->
+                            <span class="itemPrice">Price: <strong>{$objProduct->price}</strong></span>
+
+                                            <!-- Item Hits -->
+							<span class="itemHits">
+								<span class="catItemHits">
+									<a href="cart.add.php?id={$objProduct->id}"> Buy</a>
+								</span>
+							</span>
+            
+                                    <!-- Anchor link to comments below - if enabled -->
+							<div class="itemCommentsCounter">
+								<a href="product.php?id={$objProduct->id}#itemCommentsAnchor" class="itemCommentsLink k2Anchor"> Comments					
+								</a>
+							</div>
+							<div class="fb-like" data-href="http://www.SaleStore.com/product.php?id={$objProduct->id}&type={$objProduct->type_id}" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
+							<div class="clr"></div>
+						</div>
+                        <!-- Item introtext -->
+						<div class="itemIntroText">
+							{$objProduct->introduction}
+						</div>
+                        <!-- Item fulltext -->
+						<div class="itemFullText">
+							{$objProduct->description}
+						</div>
+						<div class="clr"></div>
+						<div class="itemContentFooter">
+							<div class="clr"></div>
+						</div>
+
+						<!-- Plugins: AfterDisplayContent -->
+
+						<!-- K2 Plugins: K2AfterDisplayContent -->
+
+								<div class="clr"></div>
+							</div>
+    <div class="itemLinks">
+        <div class="clr"></div>
+    </div>
+
+
+  
+  
+  
+  <!-- Plugins: AfterDisplay -->
+  
+  <!-- K2 Plugins: K2AfterDisplay -->
+  
+    <!-- K2 Plugins: K2CommentsBlock -->
+    
+   <!-- Item comments -->
+<a id="itemCommentsAnchor" name="itemCommentsAnchor"></a>
+<div class="itemComments">
+	  	  <!-- Item user comments -->
+	  <h3 class="itemCommentsCounter" style="visibility: visible;" id=""><span>
+	</span>  	Comments
+	  </h3>
+
+	  <ul class="itemCommentsList">
+   {$comment_object}
+   </ul>
+
+	  <div class="itemCommentsPagination">
+	  		  	<div class="clr"></div>
+	  </div>
+		
+			  <!-- Item comments form -->
+	  <div class="itemCommentsForm">
+	  	
+<h3 style="visibility: visible;" id=""><span>Leave</span> a comment</h3>
+
+<p class="itemCommentsFormNotes">
+		Make sure you enter the (*) required information where indicated. HTML code is not allowed.	</p>
+
+<form class="form-validate" id="comment-form" method="post" action="/joomla_37537/index.php/news">
+
+	<label for="userName" class="formName">Name *</label>
+	<input type="text" onfocus="if(this.value=='enter your name...') this.value='';" onblur="if(this.value=='') this.value='enter your name...';" value="enter your name..." id="userName" name="userName" class="inputbox">
+
+	<label for="commentEmail" class="formEmail">Email *</label>
+	<input type="text" onfocus="if(this.value=='enter your e-mail address...') this.value='';" onblur="if(this.value=='') this.value='enter your e-mail address...';" value="enter your e-mail address..." id="commentEmail" name="commentEmail" class="inputbox">
+
+	<label for="commentURL" class="formUrl">Website URL</label>
+	<input type="text" onfocus="if(this.value=='enter your site URL...') this.value='';" onblur="if(this.value=='') this.value='enter your site URL...';" value="enter your site URL..." id="commentURL" name="commentURL" class="inputbox">
+	
+	<label for="commentText" class="formComment">Message *</label>
+	<textarea id="commentText" name="commentText" onfocus="if(this.value=='enter your message here...') this.value='';" onblur="if(this.value=='') this.value='enter your message here...';" class="inputbox" cols="10" rows="20">enter your message here...</textarea>
+
+	
+	<input type="submit" value="Submit comment" id="submitCommentButton" class="button">
+
+	<span id="formLog"></span>
+
+	<input type="hidden" value="com_k2" name="option">
+	<input type="hidden" value="item" name="view">
+	<input type="hidden" value="comment" name="task">
+	<input type="hidden" value="34" name="itemID">
+	<input type="hidden" value="1" name="cb1a70dceb1893ade0e4766195b93f34"></form>
+	  </div>
+	  
+	  
+  </div>
+
+		<div class="itemBackToTop">
+		<a href="/joomla_37537/index.php/news/item/34-lorem-ipsum-dolor-sit-amet-consectetuer#startOfPageId34" class="k2Anchor">
+			back to top		</a>
+	</div>
+	
+	<div class="clr"></div>
+</div>
+<!-- End K2 Item Layout -->
+
+<!-- JoomlaWorks "K2" (v2.5.1) | Learn more about K2 at http://getk2.org -->
+
+
+								</div>
+	                        </div>
+						</div>
+                                                                    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>

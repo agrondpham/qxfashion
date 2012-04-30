@@ -1,0 +1,109 @@
+<div id="admin">
+    <h2>Privilege's setting page</h2><br/>
+    <h4>This page indicates everything about action, privilege, privilege has which actions.<br/>
+        Please do not edit if you don't understand what it is. This role manager requires some tests and researches before any usage.<br/>
+    </h4>
+    
+    <br/><br/><br/>
+    <h2>List of Privileges</h2><br/>
+    <h4>Notice that "Singular" here indicate the privileges would have the same action as its name's meaning. </h4><br/><br/>
+    <table>
+        <tr>
+            <th width="150">Name</th>
+            <th>Description</th>
+            <th width="40">Singular</th>
+        </tr>
+        {$privilege_list}
+    </table>
+    <br/><br/>
+    <h2>Create a Privilege</h2><br/>
+    <h4>To create a privilege , use the form below:</h4><br/>
+    <table>
+        <tr>
+            <td>
+                <form action="role.privilege.php" method="post" class="form">
+                    <input type="hidden" name="create" value="privilege" />
+                    <p>
+                        <input type="text" class="reg_input" name="Name" id="Name" />
+                        <label for="Name">Name</label>
+                    </p>
+                    <p>
+                        <input type="text" class="reg_input" name="Description" id="Description" />
+                        <label for="Description">Description</label>
+                    </p>
+                    <p>
+                        <input type="radio"  name="isSingular" value="Yes" checked>Yes
+                        <input type="radio" name="isSingular" value="No">No
+                        <label for="isSingular">Is Singular?</label>
+                    </p>
+                    <p><input type="submit" class="submit" name="submit" value="Create"></input></div>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <br/><br/>
+    <h2>Assign an action to a privilege</h2><br/>
+    <h4>To assign any actions to any privilege, you must create at least one or more actions and privileges. After that, the things will <br/>show up for you to assign them.</h4><br/>
+    <table>
+        <tr>
+            <td>
+                <form action="role.privilege.php" method="post" class="form">
+                    <input type="hidden" name="assign" value="action"/>
+                    <p>
+                        <select name="PrivilegeID" id="PrivilegeID" class="reg_input" style="width: 250px;" size="10">
+                            {$privilege_option_list}
+                        </select>
+                        <label for="PrivilegeID">Privilege</label>
+                    </p>
+                    <p>
+                        <select name="ActionID" id="ActionID" class="reg_input" style="width: 250px;" size="10">
+                            {$action_option_list}
+                        </select>
+                        <label for="ActionID"><span>Actions</span></label>
+                    </p>
+                    <p>
+                        <input type="submit" class="submit" name="submit" value="Assign"></input>
+                    </p>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <br/><br/>
+    <h2>List of Privilege's Actions</h2><br/>
+    <h4>below are a table with privilege and actions. This table shows that one privilege has one more actions to perform.</h4><br/>
+    <table>
+        <tr>
+            <th>Privilege</td>
+            <th>Action</td>
+            <th>Singular</td>
+        </tr>
+        {$privileges_objects_list}
+    </table>
+    
+    <br/><br/>
+    <h2>List of Actions Available</h2>
+    <h4>As the title described </h4><br/>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        {$action_list}
+    </table>
+    <br/><br/>
+    <h2>Create an Action</h2>
+    <h4>This action could be Rate, View, Create, Delete, Update and much more. You may use this form to create:</h4><br/>
+    <form action="role.privilege.php" method="post" class="form">
+        <input type="hidden" name="create" value="action" />
+        <p>
+            <input type="text" class="reg_input" name="Name" id="Name" />
+            <label for="Name">Name of an action</label>
+        </p>
+        <p>
+            <input type="text" class="reg_input" name="Description" id="Description" />
+            <label for="Description">Description</label>
+        </p>
+        <p>
+            <input type="submit" name="submit" class="submit" value="Create"/></p>
+    </form>
+</div>

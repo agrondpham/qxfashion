@@ -1,0 +1,21 @@
+<form class="form" action="cart.update.php" method="POST">  
+    <table>
+        <tr align="left" class="sectiontableheader">
+            <th>Name</th>
+            <th>Original Price</th>
+            <th>After Discount</th>
+            <th>Discount</th>
+            <th>Quantity</th>
+            <th>Action</th>
+        </tr>
+        {$cart_rows}
+
+    </table>
+    <br/>
+    <div class="text_right">Sub Total: {$total}$</div>
+    <br/>
+    <div class="text_right">
+        <input class="submit" id="update" type="submit" name="submit" value="Update" />
+        <input class="submit" id="checkout" type="submit" name="submit" value="Checkout" />
+    </div>
+</form>

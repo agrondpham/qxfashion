@@ -1,0 +1,21 @@
+<div id="admin">
+    <h2>Customer - List</h2><br/><br/>
+    <form class="form" action="customer.action.php">  
+        <table>
+            <tr>
+                <th>Customer Email</th>
+                <th>Action</th>
+            </tr>
+            {$customers}
+        </table>
+        <br/>
+
+        <div class="text_right">
+            {$pagination_html}
+            <br/><br/>
+            <input class="submit" id="checkout" type="submit" value="Create" />
+        </div>
+        <br/>
+
+    </form>
+</div>

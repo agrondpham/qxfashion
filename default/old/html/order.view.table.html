@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Date: {$order->order_date}</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    {$order_product_rows}
+    <tr>
+        <th>Total:</th>
+        <th></th>
+        <th>{$order->payment_amount}$</th>
+    </tr>
+</table>
+<br/><br/><br/>

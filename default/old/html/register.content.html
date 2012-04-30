@@ -1,0 +1,37 @@
+<div id="register">
+    <h2>Customer Registration</h2><br/><br/>
+    <form class="form" method="POST" name="register" action="register.php">  
+        <p>  
+            <input class="reg_input {$class_name}" type="text" name="name" id="name" value="{$customer->name}" />  
+            <label>Full Name</label>
+        </p>
+        <p>  
+            <input class="reg_input {$class_password}" type="password" name="password" id="password" value="{$customer_password}" />  
+            <label>Password</label>
+        </p> 
+        <p>  
+            <input class="reg_input {$class_repassword}" type="password" name="repassword" id="repassword" value="{$repassword}" />  
+            <label>Confirm Password</label>
+        </p>
+        <p>  
+            <input class="reg_input {$class_email}" type="text" name="email" id="email" value="{$customer->email}" />  
+            <label>E-mail</label>  
+        </p>  
+        <p>  
+            <input class="reg_input {$class_dob}" type="text" name="dob" id="dob" value="{$customer->dob}" />  
+            <label>Date of Birth (format: yyyy-mm-dd)</label>  
+        </p>  
+        <br/>
+        <p><label>Address</label></p>
+        <p> 
+            <textarea class="reg_textarea {$class_shipaddress}" name="shipaddress">{$customer->shipaddress}</textarea>                         
+        </p>  
+        <p>
+            {$errors}
+        </p>
+        <p>  
+            <input class="submit {$class_register}" type="submit" name="register" value="Register" />  
+        </p>  
+    </form>  
+
+</div>

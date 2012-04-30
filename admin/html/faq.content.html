@@ -1,0 +1,22 @@
+<div id="admin">
+    <h2>Frequently Asked Question List</h2><br/><br/>
+    <form class="form" action="faq.action.php">  
+        <table>
+            <tr>
+                <th>Question Title</th>
+                <th>Action</th>
+            </tr>
+            {$faqs}
+
+        </table>
+        <br/>
+
+        <div class="text_right">
+            {$pagination_html}
+            <br/><br/>
+            <input class="submit" id="checkout" type="submit" value="Create" />
+        </div>
+        <br/>
+
+    </form>
+</div>

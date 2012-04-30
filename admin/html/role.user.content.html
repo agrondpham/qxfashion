@@ -1,0 +1,36 @@
+<div id="admin">
+    <h2>Assign roles to account</h2>
+    <h4></h4><br/>
+    <form action="role.user.php" method="POST" class="form">
+        <input type="hidden" name="action" value="assignAccount" />
+
+        <p>
+            <select name="RoleID" class="reg_select">
+                $role_options
+            </select>
+            <label for="RoleID">Role</label>
+        </p>
+        <p>
+            <input type="text" class="reg_input" name="email" id="email" />
+            <label for="Email">Email</label>
+        </p>
+        <p><input type="submit" class="submit" value="Assign" /></p>
+        <p>$msg</p>
+
+    </form>
+    <h2>List of account's roles</h2>
+    <h4></h4><br/>
+    <table>
+        <tr>
+            <th>UserID</th>
+            <th>Username</th>
+            <th>RoleID</th>
+            <th>Role Name</th>
+            <th>Importance</th>
+        </tr>
+        $account_roles_rows
+        <tr>
+            <td colspan="5">~~</td>
+        </tr>
+    </table>
+</div>

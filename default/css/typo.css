@@ -1,0 +1,524 @@
+pre, .code {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #D0D0D0;
+    border-radius: 6px 6px 6px 6px;
+    border-style: solid;
+    border-width: 1px 1px 1px 6px;
+    color: #000000;
+    font-family: "Courier News",monospace;
+    font-size: 1em;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin: 5px 0 15px;
+    padding: 10px 15px;
+}
+blockquote {
+    padding: 10px 15px;
+}
+blockquote span.open {
+    background: url("../images/bq-o.png") no-repeat scroll left top transparent;
+    padding: 0 0 10px 30px;
+}
+blockquote span.close {
+    background: url("../images/bq-c.png") no-repeat scroll right bottom transparent;
+    padding: 0 25px 5px 0;
+}
+blockquote.testimonial {
+    border-bottom: 1px solid #E6E6E6;
+    padding: 0 0 15px;
+}
+blockquote.testimonial span.author {
+    background: url("../images/author.gif") no-repeat scroll 5px center transparent;
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+small {
+    font-size: 0.85em;
+}
+sup {
+    bottom: 0.3em;
+    position: relative;
+    vertical-align: baseline;
+}
+sup em {
+    color: #FF0000;
+    font-size: 0.8em;
+}
+sup {
+    bottom: 0.3em;
+    position: relative;
+    vertical-align: baseline;
+}
+acronym, abbr {
+    border-bottom: 1px dashed;
+    cursor: help;
+    letter-spacing: 1px;
+}
+img {
+    border: medium none;
+}
+img.image-left {
+    float: left;
+    margin: 0.5em 1em 0.5em 0;
+}
+img.image-right {
+    float: right;
+    margin: 0.5em 0 0.5em 1em;
+}
+img.image-border {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C6C6C6;
+    padding: 3px;
+}
+img.image-margin {
+    margin: 0.5em;
+}
+.clearbreak {
+    clear: both;
+}
+div.grid2:after, div.grid3:after, div.grid4:after, div.grid5:after, ul.hlist-left:after, ul.hlist-right:after, .clearafter:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+div.grid-col {
+    float: left;
+    margin-right: 2%;
+    overflow: hidden;
+}
+div.grid-lastcol {
+    float: right;
+    margin-right: 0 !important;
+    overflow: hidden;
+}
+div.grid2 div.grid-col {
+    width: 48%;
+}
+div.grid3 div.grid-col {
+    width: 31%;
+}
+div.grid4 div.grid-col {
+    width: 22%;
+}
+div.grid5 div.grid-col {
+    width: 17%;
+}
+.dropcap {
+    overflow: hidden;
+}
+.dropcap:first-letter {
+    color: #414141;
+    display: block;
+    float: left;
+    font: 50px/40px Georgia,Times,serif;
+    padding: 4px 8px 0 0;
+}
+p.error {
+    background: url("../images/error.gif") no-repeat scroll left top transparent;
+    color: #DF0000;
+    padding: 5px 0 5px 50px;
+}
+p.message {
+    background: url("../images/info.gif") no-repeat scroll left top transparent;
+    color: #2FAFCB;
+    padding: 3px 0 3px 50px;
+}
+p.tips {
+    background: url("../images/tips.gif") no-repeat scroll left top transparent;
+    color: #FA6900;
+    padding: 3px 0 3px 50px;
+}
+p.feed {
+    background: url("../images/feed.gif") no-repeat scroll 3px 0 transparent;
+    padding: 3px 0 3px 50px;
+}
+.highlight {
+    background: none repeat scroll 0 0 #ECECEC;
+    border-radius: 5px 5px 5px 5px;
+    color: #3D3D3D;
+    font-weight: bold;
+    padding: 3px 5px;
+}
+p.stickynote {
+    background: url("../images/stickynote.gif") no-repeat scroll 8px center #FFFFFF;
+    border: 1px solid #C6C6C6;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px 10px 15px 70px;
+}
+p.download {
+    background: url("../images/download.gif") no-repeat scroll 8px center #FFFFFF;
+    border: 1px solid #C6C6C6;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px 10px 15px 70px;
+}
+p.buy {
+    background: url("../images/buy.gif") no-repeat scroll 8px center #FFFFFF;
+    border: 1px solid #C6C6C6;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px 10px 15px 70px;
+}
+p.sell {
+    background: url("../images/sell.gif") no-repeat scroll 8px center #FFFFFF;
+    border: 1px solid #C6C6C6;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px 10px 15px 68px;
+}
+.blocknumber {
+    clear: both;
+    padding: 5px 15px 10px;
+    position: relative;
+}
+ul.checklist {
+    list-style: none outside none;
+}
+ul.checklist li {
+    background: url("../images/checklist.png") no-repeat scroll 4px 5px transparent !important;
+    padding: 0 0 0 22px !important;
+}
+ul.star {
+    list-style: none outside none;
+}
+ul.star li {
+    background: url("../images/star.png") no-repeat scroll 2px 0 transparent !important;
+    padding: 0 0 0 22px !important;
+}
+ul.arrow {
+    list-style: none outside none;
+}
+ul.arrow li {
+    background: url("../images/bg-arrow.png") no-repeat scroll 5px 5px transparent;
+    padding: 0 0 0 22px;
+}
+.bignumber {
+    background: url("../images/bignumber.gif") no-repeat scroll left top transparent;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font: bold 23px Arial,sans-serif;
+    margin-right: 8px;
+    padding: 8px 8px 8px 10px;
+}
+div.bubble1, div.bubble2, div.bubble3, div.bubble4 {
+    margin: 15px 0;
+}
+div.bubble1 span.author, div.bubble2 span.author, div.bubble3 span.author, div.bubble4 span.author {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 18px;
+    margin-left: 35px;
+}
+div.bubble1 div {
+    background: url("../images/bub1-br.png") no-repeat scroll right bottom transparent;
+    margin: 0;
+    width: 100%;
+}
+div.bubble1 div div {
+    background: url("../images/bub1-bl.png") no-repeat scroll left bottom transparent;
+}
+div.bubble1 div div div {
+    background: url("../images/bub1-tr.png") no-repeat scroll right top transparent;
+}
+div.bubble1 div div div div {
+    background: url("../images/bub1-tl.png") no-repeat scroll left top transparent;
+}
+div.bubble1 div div div div div {
+    margin: 0;
+    padding: 10px 15px 20px;
+    width: auto;
+}
+div.bubble2 div {
+    background: url("../images/bub2-br.png") no-repeat scroll right bottom transparent;
+    margin: 0;
+    width: 100%;
+}
+div.bubble2 div div {
+    background: url("../images/bub2-bl.png") no-repeat scroll left bottom transparent;
+}
+div.bubble2 div div div {
+    background: url("../images/bub2-tr.png") no-repeat scroll right top transparent;
+}
+div.bubble2 div div div div {
+    background: url("../images/bub2-tl.png") no-repeat scroll left top transparent;
+}
+div.bubble2 div div div div div {
+    margin: 0;
+    padding: 12px 15px 22px;
+    width: auto;
+}
+div.bubble3 div {
+    background: url("../images/bub3-br.png") no-repeat scroll right bottom transparent;
+    margin: 0;
+    width: 100%;
+}
+div.bubble3 div div {
+    background: url("../images/bub3-bl.png") no-repeat scroll left bottom transparent;
+}
+div.bubble3 div div div {
+    background: url("../images/bub3-tr.png") no-repeat scroll right top transparent;
+}
+div.bubble3 div div div div {
+    background: url("../images/bub3-tl.png") no-repeat scroll left top transparent;
+}
+div.bubble3 div div div div div {
+    margin: 0;
+    padding: 14px 15px 50px;
+    width: auto;
+}
+div.bubble4 div {
+    background: url("../images/bub4-br.png") no-repeat scroll right bottom transparent;
+    margin: 0;
+    width: 100%;
+}
+div.bubble4 div div {
+    background: url("../images/bub4-bl.png") no-repeat scroll left bottom transparent;
+}
+div.bubble4 div div div {
+    background: url("../images/bub4-tr.png") no-repeat scroll right top transparent;
+}
+div.bubble4 div div div div {
+    background: url("../images/bub4-tl.png") no-repeat scroll left top transparent;
+}
+div.bubble4 div div div div div {
+    margin: 0;
+    padding: 10px 15px 50px;
+    width: auto;
+}
+.legend-title {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 100%;
+    font-weight: bold;
+    left: 7px;
+    margin: 0;
+    padding: 0 3px;
+    position: absolute;
+    top: -10px;
+}
+.legend {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    margin: 20px 0;
+    padding: 0 10px;
+    position: relative;
+}
+div.jv-left, div.jv-right {
+    margin: 0;
+    padding: 0;
+    width: 49%;
+}
+div.jv-left {
+    clear: left;
+    float: left;
+}
+div.jv-right {
+    float: right;
+}
+#jv-tabs {
+    background: none repeat scroll 0 0 #262626;
+}
+#jv-tabs div.jv-box-br, #jv-tabs div.jv-box-bl, #jv-tabs div.jv-box-tr, #jv-tabs div.jv-box-tl {
+    margin: 0;
+    padding: 0;
+}
+#jv-tabs div.jv-box-br {
+    background: none repeat scroll 0 0 #262626;
+}
+#jv-tabs div.jv-box-bl {
+    background: none repeat scroll 0 0 transparent;
+}
+#jv-tabs div.jv-box-tr {
+    background: none repeat scroll 0 0 transparent;
+}
+#jv-tabs div.jv-box-tl {
+    background: none repeat scroll 0 0 transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+	font-family: Arial,Helvetica,sans-serif;
+font-size:12px;
+}
+caption, th {
+    text-align: left;
+}
+table .sectiontableheader{
+	background-color: #F2F2F2;
+	border-collapse: collapse;
+    color: #404040;
+	font-size: 12px;
+}
+table .sectiontableheader th{
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+	
+}
+table .sectiontableentry1{
+	background-color: #FFF;
+	border-collapse: collapse;
+    color: #404040;
+	font-size: 12px;
+}
+table .sectiontableentry1 td{
+    padding: 8px;
+    text-align: left;
+	
+}
+
+table.plainrows {
+    background-color: #F2F2F2;
+    border-collapse: collapse;
+    color: #404040;
+}
+table.plainrows caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+table.plainrows thead {
+    border-bottom: 1px solid #284D73;
+}
+table.plainrows thead th {
+    background-color: #366999;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    text-transform: capitalize;
+}
+table.plainrows tfoot th, table.plainrows tfoot td {
+    background-color: #D9D9D9;
+    color: #000000;
+    font-size: 1.1em;
+    padding: 3px 10px;
+    text-transform: capitalize;
+}
+table.plainrows tfoot td {
+    text-align: right;
+}
+table.plainrows tbody th, table.plainrows tbody td {
+    border-bottom: 1px solid #D9D9D9;
+    padding: 4px 10px;
+}
+table.plainrows tbody th {
+    white-space: nowrap;
+}
+table.plainrows tr.odd {
+}
+table.plainrows tbody tr:hover {
+    background: none repeat scroll 0 0 #E5E5E5;
+}
+table.colorstripes {
+    background: none repeat scroll 0 0 #284D73;
+    border: 1px solid #162C40;
+    border-collapse: collapse;
+    color: #FFFFFF;
+}
+table.colorstripes caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+table.colorstripes td, table.colorstripes th {
+    border: 1px dashed #366999;
+    padding: 5px 10px;
+}
+table.colorstripes thead th {
+    background: none repeat scroll 0 0 #162C40;
+    border: 1px solid #284D73;
+    color: #FFFFFF;
+    font-size: 1.1em;
+}
+table.colorstripes tbody th, table.colorstripes tbody td {
+    text-align: left;
+    vertical-align: top;
+}
+table.colorstripes tbody tr.odd {
+    background: none repeat scroll 0 0 #224161;
+}
+table.colorstripes tbody tr:hover {
+    background: none repeat scroll 0 0 #1F3D59;
+}
+table.colorstripes tbody tr:hover th, table.colorstripes tbody tr.odd:hover th {
+    background: none repeat scroll 0 0 #1F3D59;
+}
+table.colorstripes tfoot th, table.colorstripes tfoot td {
+    background: none repeat scroll 0 0 #162C40;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    padding: 4px 10px;
+}
+table.colorstripes tfoot td {
+    text-align: right;
+}
+table.greystripes {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-collapse: collapse;
+    color: #404040;
+}
+table.greystripes caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+table.greystripes td, table.greystripes th {
+    border: 1px dashed #E5E5E5;
+    padding: 5px 10px;
+}
+table.greystripes thead th {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #404040;
+    border-color: #595959 #595959 #000000;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    color: #FFFFFF;
+    font-size: 1.1em;
+}
+table.greystripes tbody th, table.greystripes tbody td {
+    text-align: left;
+    vertical-align: top;
+}
+table.greystripes tbody tr.odd {
+    background: none repeat scroll 0 0 #F2F2F2;
+}
+table.greystripes tbody tr:hover {
+    background: none repeat scroll 0 0 #E5E5E5;
+}
+table.greystripes tbody tr:hover th, table.greystripes tbody tr.odd:hover th {
+    background: none repeat scroll 0 0 #E5E5E5;
+}
+table.greystripes tfoot th, table.greystripes tfoot td {
+    background-color: #D9D9D9;
+    border: medium none;
+    color: #000000;
+    font-size: 1.1em;
+    padding: 4px 10px;
+}
+table.greystripes tfoot td {
+    text-align: right;
+}

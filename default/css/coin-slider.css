@@ -1,0 +1,43 @@
+.slider-container {
+	width:1390px;
+	height:265px;
+	position:relative;
+	left:50%;
+	margin-left:-695px;
+}
+#coin-slider{
+	overflow:hidden;
+	background:url(../images/loader.gif) 50% 50% no-repeat;
+	width:1390px;
+	height:265px;
+	margin:0 auto;
+}
+.coin-slider{
+	position:relative;
+	margin:0px auto;
+	width:1390px;
+	height:265px;
+}
+.coin-slider a{
+	text-decoration:none;
+	outline:none;
+	border:none;
+}
+.cs-buttons{
+	font-size:0px;
+	position:absolute;
+	line-height:0;
+	bottom:40px;
+	left:669px;
+}
+.cs-buttons a{
+	margin-right:3px;
+	height:11px;
+	width:11px;
+	background:url(../images/bg-pagination.png) left bottom no-repeat;
+	display:inline-block;
+}
+.cs-buttons a:hover, .cs-buttons a.cs-active{background-position:left top;}
+.cs-prev, .cs-next{
+	display:none;
+}

@@ -1,0 +1,58 @@
+<div id="itemListPrimary">
+    <div class="itemContainer itemContainerLast">
+        <!-- Start K2 Item Layout -->
+	<div class="catItemView groupPrimary home">
+        	<!-- Plugins: BeforeDisplay -->
+		<!-- K2 Plugins: K2BeforeDisplay -->
+		<div class="catItemHeader">
+        		<!-- Item title -->
+			<h3 id="" style="visibility: visible;" class="catItemTitle">{$objProduct->name}	  	
+			</h3>
+        		<!-- Date created -->
+			<span class="catItemDateCreated">Published: {$objProduct->modifiedDate}</span>
+                        <span class="catItemPrice">Price: <strong>{$objProduct->price}</strong></span>
+			<!-- Anchor link to comments below -->
+			<div class="catItemCommentsLink">
+                            <a href="product.php?id={$objProduct->id}#itemCommentsAnchor">Comments</a>
+			</div>
+                </div>
+		  <!-- Plugins: AfterDisplayTitle -->
+		  <!-- K2 Plugins: K2AfterDisplayTitle -->
+		<div class="catItemBody">
+		  <!-- Plugins: BeforeDisplayContent -->
+		  <!-- K2 Plugins: K2BeforeDisplayContent -->
+		  <!-- Item Image -->
+                    <div class="catItemImageBlock">
+                        <span class="catItemImage">
+                            <a href="product.php?id={$objProduct->id}" title="{$objProduct->name}">
+                                <img class="aligncenter size-full wp-image-7146" alt="" src="image.php?id={$objProduct->image_id}" style="width: 330px; height: auto;" />
+                            </a>
+                        </span>
+                        <div class="clr"></div>
+                    
+                    </div>
+                          <!-- Item introtext -->
+                    <div class="catItemIntroText">
+                        <p>{$objProduct->introduction}</p>
+        			<!-- Item "read more..." link -->
+                	<div class="catItemReadMore">
+                            <a class="k2ReadMore" href="product.php?id={$objProduct->id}&type={$objProduct->type_id}">Learn More</a>
+                            <a class="k2ReadMore" href="cart.add.php?id={$objProduct->id}">Buy Now</a>
+                            <div class="fb-like" data-href="http://www.SaleStore.com/product.php?id={$objProduct->id}&type={$objProduct->type_id}" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
+			</div>
+                    </div>
+                    <div class="clr"></div>
+                            <!-- Plugins: AfterDisplayContent -->
+		            <!-- K2 Plugins: K2AfterDisplayContent -->
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+                <div class="clr"></div>
+                <!-- Plugins: AfterDisplay -->
+		<!-- K2 Plugins: K2AfterDisplay -->
+		<div style="height:30px;float:left"></div>
+		<div class="clr"></div>
+	</div>
+	<!-- End K2 Item Layout -->
+    </div>
+</div>

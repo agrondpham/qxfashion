@@ -1,0 +1,101 @@
+<div id="admin">
+    <h2>Role Domain</h2><br/><br/>
+    <h4></h4><br/><br/>
+    <h2>List of Domains</h2>
+    <h4>
+        Domains are pages such as about, contact, index page, cart, register, etc.<br/>
+        Domains usually has many elements which are called "objects" in this page. Specifically, domain is a page which has many part of<br/>
+        it can be show or not depend on which privilege we set<br/><br/>
+        
+    </h4><br/>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Singular</th>
+        </tr>
+        $domain_list
+    </table>
+    <br/><br/><br/>
+    <h2>Create a domain</h2><br/>
+    <h4></h4>
+    <form action="role.domain.php" method="POST" class="form">
+        <input type="hidden" name="create" value="domain" />
+        <p>
+            <input type="text" class="reg_input" name="Name" id="Name" />
+            <label for="Name">Name</label>
+        </p>
+        <p>
+            <input type="text" class="reg_input" name="Description" id="Description" />
+            <label for="Description">Description</label>
+        </p>
+        <p>
+            <input type="radio" name="isSingular" value="Yes" checked>Yes
+            <input type="radio" name="isSingular" value="No">No
+            <label for="isSingular">isSingular?</label>
+        </p>
+        <p><input type="submit" class="submit" name="submit" value="Create"></input></p>
+    </form>
+
+    <br/><br/><br/>
+    <h2>Assign an object to a domain</h2><br/>
+    <h4></h4>
+    <form action="role.domain.php" method="POST" class="form">
+        <input type="hidden" name="assign" value="object"/>
+        <p>
+            <select name="DomainID" id="DomainID" class="reg_input" style="width: 250px;" size="10">
+                {$domain_option_list}
+            </select>
+            <label for="DomainID"><span>Domain<span></label>
+                        </p>
+                        <p>
+                            <select name="ObjectID" id="ObjectID" class="reg_input" style="width: 250px;" size="10">
+                                {$object_option_list}
+                            </select>
+                            <label for="ObjectID"><span>Object</span></label>
+                        </p>
+                        <p>
+                            <input type="submit" name="submit" class="submit" value="Assign"/></p>
+                        </form>
+
+                        <br/><br/><br/>
+                        <h2>Domain has Objects</h2>
+                        <h4></h4><br/>
+                        <table>
+                            <tr>
+                                <th>Domain</th>
+                                <th>Object</th>
+                                <th>Singular</th>
+                            </tr>
+                            $domains_objects_list
+                        </table>
+
+                        <br/><br/><br/>
+                        <h2>Objects</h2>
+                        <h4></h4><br/>
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                            $object_list
+                        </table>
+
+                        <br/><br/><br/>
+                        <h2>Create an Object</h2>
+                        <h4></h4><br/>
+
+                        <form action="role.domain.php" method="post" class="form">
+                            <input type="hidden" name="create" value="object" />
+                            <p>
+                                <input type="text" class="reg_input" name="Name" id="Name" />
+                                <label for="Name">Name</label>
+                            </p>
+                            <p>
+                                <input type="text" class="reg_input" name="Description" id="Description" />
+                                <label for="Description">Description</label>
+                            </p>
+                            <p><input type="submit" name="submit" class="submit" value="Create"/></p>
+                        </form>
+
+                        </div>

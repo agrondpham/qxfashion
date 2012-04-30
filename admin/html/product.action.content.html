@@ -1,0 +1,64 @@
+<div id="admin">
+    <div style="float: left;">
+        <h2>Product - {$button_submit}</h2>
+        <h4>Create your product</h4><br/>
+        <form class="form" name="create" method="POST" enctype="multipart/form-data">  
+            <input type="hidden" name="MAX_FILE_SIZE" value="104857600" />
+            <p>  
+                <input class="reg_input" type="text" name="name" value="{$product_form->name}" />  
+                <label>Name</label>
+            </p>
+            <p>  
+                <input class="reg_input" type="text" name="stock" value="{$product_form->stock}" />  
+                <label>Stock</label>
+            </p>
+            <p>  
+                <input class="reg_input" type="text" name="price"  id="price" value="{$product_form->price}" />  
+                <label>Price ($)</label>
+            </p>
+            <p>  
+                <input class="reg_input" type="text" name="discount" id="discount" value="{$product_form->discount}" />  
+                <label>Discount (percent)</label>
+            </p>
+            <p>  
+                <select class="reg_select" name="image_id" >
+                    <option value="{$image_form->id}">{$image_form->name}</option>
+                    {$product_image_options}
+                </select>
+                <label>Cover image</label>
+            </p>
+            <p>  
+                <select class="reg_select" name="category_id">
+                    {$category_options}
+                </select>
+                <label>Category</label>
+            </p>
+            <p>  
+                <select class="reg_select" name="itemType_id">
+                    {$itemType_options}
+                </select>
+                <label>Type of Item(Product/News)</label>
+            </p>
+            <br/>
+            <p><label>Description</label></p>
+            <p> 
+                <textarea class="reg_textarea" name="description">{$product_form->description}</textarea>                         
+            </p>  
+            <p><label>Upload Images (optional)</label></p>
+            <p>
+                <input type="hidden" name="MAX_FILE_SIZE" value="104857600">
+                <input type="file" class="reg_select" name="file[]"><label>Image</label><br/>
+                <input type="file" class="reg_select" name="file[]"><label>Image</label><br/>
+                <input type="file" class="reg_select" name="file[]"><label>Image</label>
+            </p>
+            <br/>
+            <p>  
+                <input class="submit" type="submit" name="create" value="{$button_submit}" />  
+            </p>  
+        </form>  
+    </div>
+    <div style="float:left">
+        {$product_demonstration}
+    </div>
+    <div style="clear: both;"></div>
+</div>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="{$template->folder}/css/reset.css" />
+    <link rel="stylesheet" href="{$template->folder}/css/style2.css" />
+    <title>{$title}</title>
+</head>
+<body>
+    <div id="header">
+        {$header}
+    </div>
+    <div id="menu">
+        <ul id="menu_ul">
+            {$menu}
+        </ul>
+    </div>
+    <div id="category">
+        <ul id="category_ul">
+            {$categories}
+        </ul>
+    </div>
+    <div id="body">
+        {$body}
+    </div>
+    <div id="footer">
+        {$footer}
+    </div>
+</body>
+</html>

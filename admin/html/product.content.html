@@ -1,0 +1,23 @@
+<div id="admin">
+    <h2>Items - List</h2><br/><br/>
+    <form class="form" action="product.action.php">  
+        <table>
+            <tr>
+                <th>Items Name</th>
+                <th>Original Price</th>
+                <th>Discount</th>
+                <th>After discount</th>
+                <th>Item Type</th>
+                <th>Action</th>
+            </tr>
+            {$products}
+        </table>
+        <br/>
+        <div class="text_right">
+            {$pagination_html}
+            <br/><br/>
+            <input class="submit" id="checkout" type="submit" value="Create" />
+        </div>
+        <br/>
+    </form>
+</div>

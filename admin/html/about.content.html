@@ -1,0 +1,23 @@
+<div id="admin">
+    <h2>About Page</h2><br/><br/>
+    <form class="form" method="POST">  
+        <p> 
+            <textarea class="reg_textarea_large" name="content" name="text">{$about_content_textarea}</textarea>                         
+        </p>  
+        <br/>
+        <p>  
+            <input class="submit" type="submit" name="action" value="Update" />  
+        </p>  
+    </form>
+    <br/><br/>
+    <h2>Preview</h2>
+</div>
+<br/>
+<div id="body">
+    <div id="content">
+        {$about_content}
+    </div>
+    <div id="cart">
+        {$cart}
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div id="admin">
+    <h2>Pages</h2>
+    <h4>Manage additional pages</h4>
+    <br/>
+    <form action="page.action.php" method="POST">
+    <table>
+        <tr>
+            <th>Link Name</th>
+            <th>Type</th>
+            <th>Page Title</th>
+            <th>Order</th>
+            <th>Status</th>
+            <th>Link</th>
+            <th>Action</th>
+        </tr>
+        {$pages_rows}
+    </table>
+    <br/>
+    <div class="text_right">
+        {$pagination_html}
+        <br/><br/>
+            <input class="submit" id="checkout" type="submit" name="action" value="Update" />
+        
+            <input class="submit" id="checkout" type="submit" name="action" value="Create" />
+        </form>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div id="admin">
+    <h2>Category - Create</h2>
+    <br/>
+    <form class="form" method="POST">  
+        <p><label>Title</label></p>
+        <p><input class="reg_input" style="min-width: 200px;" type="text" name="name" id="name" value="{$name}" /></p>
+        <br/>
+        <p><label>Description</label></p>
+        <p> 
+            <textarea class="reg_textarea" name="description">{$description}</textarea>                         
+        </p> 
+        <br/>
+        <p><label>Parent (optional)</label></p>
+        <p>  
+            <select class="reg_select" id="parentid" name="parentid" style="min-width: 200px;">
+                <option value="0">-</option>
+                {$category_options}
+            </select>
+        </p>
+        <br/>
+        <p>  
+            <input class="submit" type="submit" name="create" value="{$button_submit}" />  
+        </p>  
+    </form>  
+</div>

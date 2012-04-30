@@ -1,0 +1,42 @@
+<div id="admin">
+    <h2>Search for user's privileges</h2>
+    <h4></h4><br/>
+
+    <form action="role.user.privilege.php" method="GET" class="form">
+        <input type="hidden" name="action" value="account_privileges" />
+        <p>
+            <input type="text" class="reg_input" name="email" id="email" value="">
+            <label for="email">Email:</label>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Search privilege" class="submit">
+        </p>
+    </form>
+    <br/><br/><br/>
+    <h2>List of accounts</h2>
+    <h4></h4><br/>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Role</th>
+        </tr>
+        $accounts_list
+    </table>
+
+    <br/><br/><br/>
+    <h2>User Privileges</h2>
+    <table>
+        <tr>
+            <th>Role Name</th>
+            <th>Privilege</th>
+            <th>Singular</th>
+            <th>Action</th>
+            <th>Domain</th>
+            <th>Singular</th>
+            <th>Object</th>
+            <th>Importance</th>
+        </tr>
+        $roles_td
+    </table>
+
+</div>

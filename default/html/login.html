@@ -1,0 +1,17 @@
+<h1>Customer Login</h1>
+<form class="form" method="POST" name="login">  
+    <p>  
+        <input type="text" name="email" id="email" value="{$customer->email}" />  
+        <label>E-mail</label>  
+    </p>  
+    <p>  
+        <input type="password" name="password" id="password" />  
+        <label>Password</label>
+    </p>
+    <p>
+        $errors
+    </p>
+    <p class="submit">  
+        <input type="submit" name="login" value="Login" />  
+    </p>  
+</form>  
