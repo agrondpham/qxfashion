@@ -1,0 +1,16 @@
+<div id="sidebar">
+    <strong>Category list:</strong> <br/>
+    {$categories}
+</div>
+<br/></br>
+<form name="create" method="POST">
+    Name: <br/>
+    <input type="text" name="name" value="{$name}" /><br/>
+    Parent ID: <br/>
+    <!--<input type="text" name="parentid" value="{$parentid}" /><br/> -->
+    <select name="parentid">
+        <option value="0">-</option>
+        {$category_options}
+    </select>
+    <input type="submit" name="create" value="{$button_submit}" /> 
+</form>

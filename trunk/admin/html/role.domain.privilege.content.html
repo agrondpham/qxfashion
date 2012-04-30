@@ -1,0 +1,97 @@
+<div id="admin">
+
+    <h2>Roles as Permissions</h2>
+    <h4></h4><br/>
+    <table>
+        <tr>
+            <th class="cell2">Role Name</th>
+            <th class="cell2">Domain Name</th>
+            <th class="cell2">Privilege Name</th>
+            <th class="cell2">Is Allowed</th>
+            <th class="cell2">Importance</th>
+        </tr>
+        {$domains_privileges_list}
+        <tr>
+            <td align="right" colspan="5">~~</td>
+        </tr>
+    </table>
+
+    <br/><br/><br/>
+    <h2>Create permissions on roles</h2>
+    <h4></h4><br/>
+
+    <form action="role.domain.privilege.php" method="POST" class="form">
+        <input type="hidden" name="create" value="permission"></input>
+        <p>
+            <select name="RoleID" class="reg_select" style="width: 200px;">
+                {$role_option_list}
+            </select>
+            <label for="RoleID">Role</label>
+        </p>
+        <p>
+            <select name="DomainID" id="DomainID" class="reg_select" style="width: 200px;">
+                {$domain_option_list}
+            </select>
+            <label for="DomainID">Domain</label>
+        </p>
+        <p>
+            <select name="PrivilegeID" id="PrivilegeID" class="reg_select" style="width: 200px;">
+                {$privilege_option_list}
+            </select>
+            <label for="PrivilegeID">Privilege</label>
+        </p>
+        <p>
+            <input type="radio" name="isAllowed" value="Yes">   Yes
+            <input type="radio" name="isAllowed" value="No" checked> No
+            <label for="isAllowed">isAllowed?</label>
+        </p><br/>
+        <p><input type="submit" name="submit" value="Create" class="submit"></input></p>
+    </form>
+
+    <br/><br/><br/>
+    <h2>List of Roles</h2>
+    <h4></h4><br/>
+    <table>
+        <tr>
+            <th class="cell2" width="50">RoleID</th>
+            <th class="cell2" width="150">Role Name</th>
+            <th class="cell2" width="200">Description</th>
+            <th class="cell2" width="50">Importance</th>
+        </tr>
+        <tr>
+            {$account_roles_rows}
+        </tr>
+        <tr>
+            <td colspan="4" align="right">~~</td>
+        </tr>
+    </table>
+
+    <br/><br/><br/>
+    <h2>Create new role</h2>
+    <h4></h4><br/>
+
+    <form action="role.domain.privilege.php" method="POST" class="form">
+        <input type="hidden" name="create" value="role"/>
+        <p>
+            <input type="text" class="reg_input" name="RoleName" id="RoleName"/>
+            <label for="RoleName">Role name</label>
+        </p>
+        <p>
+            <input type="text" class="reg_input" name="RoleImportance" id="RoleImportance" value="0" />
+            <label for="RoleImportance">Importance</label>
+        </p>
+        <p>
+            <textarea class="reg_textarea" name="RoleDescription" id="RoleDescription" rows="3" cols="20"></textarea>
+            <label for="RoleDescription">Description</label>
+        </p>
+        <p><input type="submit" name="submit" class="submit" value="Create"></input></p>
+    </form>
+
+
+
+
+
+
+
+
+</div>

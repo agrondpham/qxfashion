@@ -1,0 +1,9 @@
+<tr>
+    <td><a href="product.php?id={$product->id}">{$product->name}</a></td>
+    <td><del>{$product->price}$</del></td>
+    <td>{$product->discount}%</td>
+    <td>{$price_after_discount}$</td>
+    <td>
+        <a href="search.php?keyword={$keyword}&id={$product->id}">Add to Cart</a>
+    </td>
+</tr>

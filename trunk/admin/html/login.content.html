@@ -1,0 +1,21 @@
+<div id="admin">
+
+    <h2>Staff login form</h2><br/><br/>
+    <form class="form" method="POST" name="login">    
+        <p>  
+            <input class="reg_input {$class_email}" type="text" name="email" id="email" value="{$customer->email}" />  
+            <label>E-mail</label>  
+        </p>  
+        <p>  
+            <input class="reg_input {$class_password}" type="password" name="password" id="password" value="" />  
+            <label>Password</label>
+        </p>
+        <br/>
+        <p>  
+            <input class="submit {$class_login}" type="submit" name="login" value="Login" />  
+        </p>  
+    </form>  
+    <p>{$errors}</p>
+    <br/>
+    Please contact KevinLe (+65 93270289) or <a href="/forgotpassword.php">click here</a>
+</div>

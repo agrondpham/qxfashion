@@ -1,0 +1,20 @@
+<div id="register">
+    <h2>Customer Login</h2><br/><br/>
+    <form class="form" method="POST" name="login">    
+        <p>  
+            <input class="reg_input {$class_email}" type="text" name="email" id="email" value="{$customer->email}" />  
+            <label>E-mail</label>  
+        </p>  
+        <p>  
+            <input class="reg_input {$class_password}" type="password" name="password" id="password" value="" />  
+            <label>Password</label>
+        </p>
+        <br/>
+        <p>  
+            <input class="submit {$class_login}" type="submit" name="login" value="Login" />  
+        </p>  
+    </form>  
+    <p>{$errors}</p>
+    <br/>
+    <a href="forgotpassword.php">Forgot Password ?</a>
+</div>

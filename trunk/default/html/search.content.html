@@ -1,0 +1,28 @@
+<div id="content2">
+    <div id="shoppingcart">
+        <h2>Search</h2><br/><br/>
+        <form class="form" method="GET">  
+            <select class="Medium" name="category_id">
+                <option>All Product</option>
+                {$category_options}
+            </select>
+            <input class="Long" type="text" name="keyword" />
+            <input type="submit" name="search" value="Search" />
+        </form>
+        <br/><br/>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Old Price</th>
+                <th>Discount</th>
+                <th>New Price</th>
+                <th></th>
+            </tr>
+            {$search_product_rows}
+        </table>
+        <br/><br/>
+        <div id="notice">
+            $errors
+        </div>
+    </div>
+</div>

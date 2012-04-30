@@ -1,0 +1,16 @@
+<div id="viewproduct" style="width: 500px !important; position: relative; min-height: 600px;">
+    <h2>Demonstration</h2>
+    <h4>Bellow is a demonstration of product page which show its product.</h4><br/><br/>
+    <div id="viewproduct1" style="padding: 0;float:left; position: absolute; left: 0; min-width: 200px !important; left: -10px;">
+        <img alt="{$product_form->name}" src="../image.php?id={$product_form->image_id}" />
+    </div>
+    <div id="viewproduct2" style="float:left; position: absolute; right: 0; z-index: 10;width: 300px; padding: 0;">
+        <h2>{$product_form->name}</h2><br />
+        <h3>{$product_form->price}</h3><br />
+        <p style="min-height: 80px;">Description:<br />
+            {$product_form->description}
+        </p><br />
+        
+        <a class="AddToCartButton" href="#">Add to Cart</a>
+    </div>
+</div>

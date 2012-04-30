@@ -1,0 +1,39 @@
+<div id="content2">
+    <div id="shoppingcart">
+        <h2>Profile Update</h2><br/><br/>
+        <form class="form" method="POST">  
+            <p>  
+                <input class="reg_input {$class_name}" type="text" name="name" id="name" value="{$CurrentSession->name}"/>  
+                <label>Full Name</label>
+            </p>
+            <p>  
+                <input class="reg_input {$class_oldpassword}" type="password" name="oldpassword" id="oldpassword" value=""/>  
+                <label>Old Password</label>
+            </p>
+            <p>  
+                <input class="reg_input {$class_newpassword}" type="password" name="newpassword" id="newpassword" value=""/>  
+                <label>New Password</label>
+            </p>
+            <p>  
+                <input class="reg_input {$class_repassword}" type="password" name="repassword" id="renewpassword" value=""/>  
+                <label>Confirm Password</label>
+            </p>
+            <p>  
+                <input class="reg_input {$class_dob}" type="text" name="dob" id="dob" value="{$CurrentSession->dob}"/>  
+                <label>Date of Birth (YYYY-MM-DD)</label>  
+            </p>  
+            <br/>
+            <p><label>Shipping Address</label></p>
+            <p> 
+                <textarea class="reg_textarea {$class_shipaddress}" name="shipaddress">{$CurrentSession->shipaddress}</textarea>                         
+            </p>  
+            <br/>
+            <p>
+                {$errors}
+            </p>
+            <p>  
+                <input class="submit" type="submit" name="action" value="Update" />
+            </p>  
+        </form>  
+    </div>
+</div>

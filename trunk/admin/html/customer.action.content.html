@@ -1,0 +1,37 @@
+<div id="admin">
+    <h2>Customer - Create</h2><br/><br/>
+    <form class="form" name="customer_form" method="POST">  
+        <p>  
+            <input class="reg_input {$class_name}" type="text" name="name" id="name" value="{$customer->name}" />  
+            <label>Full Name</label>
+        </p>
+        <p>  
+            <input class="reg_input {$class_password}" type="password" name="password" id="password" value="{$customer_password}" />  
+            <label>Password</label>
+        </p>
+        <p>  
+            <input class="reg_input {$class_repassword}" type="password" name="repassword" id="repassword" value="{$repassword}" />  
+            <label>Confirm Password</label>
+        </p>
+        <p>  
+            <input class="reg_input {$class_email}" type="text" name="email" id="email" value="{$customer->email}" />  
+            <label>E-mail</label>  
+        </p>  
+
+        <p>  
+            <input class="reg_input {$class_dob}" type="text" name="dob" id="dob" value="{$customer->dob}" />  
+            <label>Date of Birth</label>  
+        </p>  
+        <br/>
+        <p><label>Address</label></p>
+        <p> 
+            <textarea class="reg_textarea {$class_shipaddress}" name="shipaddress">{$customer->shipaddress}</textarea>                         
+        </p>  
+        <br/>
+        <p>{$errors}</p>
+        <p>  
+            <input class="submit {$class_register}" type="submit" name="register" value="{$submit_button}" />  
+        </p>  
+    </form>  
+</form>
+</div>

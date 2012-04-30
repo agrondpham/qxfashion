@@ -1,0 +1,40 @@
+<div id="postProduct" class="hentry p1 post publish">
+        <h2 class="entry-title"><a href="product.php?id={$product->id}">{$product_object->name}</a></h2>
+        <div class="entry-date">{$product_object->date} Price: {$product_object->price}</div>
+        <div class="entry-content">
+                <img class="aligncenter size-full wp-image-7146"alt="" src="image.php?id={$product_object->image_id}" />
+                Description
+                {$product_object->description}
+        </div>
+        <div><a class="AddToCartButton" href="cart.add.php?id={$product_object->id}">Add to Cart</a><br /></div>
+
+        <p><img class="aligncenter size-full wp-image-7182" title="xxchrisellefactor2" src="http://thechrisellefactor.com/wp-content/uploads/2012/03/xxchrisellefactor26.png" alt="" width="250" height="56" /></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="bottomcontainerBox" style="background-color:#fff;">
+                <div style="float:left; width:85px;padding-right:10px; margin:4px 4px 4px 4px;height:30px;">
+                        <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fthechrisellefactor.com%2F2012%2F03%2Fin-a-weeks-adventure%2F&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=21" style="border:none; overflow:hidden; width=85px; height:21px;"></iframe></div>
+                        <div style="float:left; width:80px;padding-right:10px; margin:4px 4px 4px 4px;height:30px;">
+                                <g:plusone size="medium" href="http://thechrisellefactor.com/2012/03/in-a-weeks-adventure/"></g:plusone>
+                        </div>
+                        <div style="float:left; width:95px;padding-right:10px; margin:4px 4px 4px 4px;height:30px;">
+                                <a href="http://twitter.com/share" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://twitter.com']);" class="twitter-share-button" data-url="http://thechrisellefactor.com/2012/03/in-a-weeks-adventure/"  data-text="In A Weeks Adventure" data-count="horizontal" data-via="CHRISELLEtweets">Tweet</a>
+                        </div>
+                        <div style="float:left; width:105px;padding-right:10px; margin:4px 4px 4px 4px;height:30px;"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fthechrisellefactor.com%2F2012%2F03%2Fin-a-weeks-adventure%2F&media=http%3A%2F%2Fthechrisellefactor.com%2Fwp-content%2Fuploads%2F2012%2F03%2FMarchInsta-659x1500.jpg" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://pinterest.com']);" class="pin-it-button" count-layout="horizontal">Pin It</a>
+                        </div>			
+        </div>
+        <div style="clear:both"></div><div style="padding-bottom:4px;"></div>
+        <div class="entry-meta">
+                <span class="entry-category">Filed in <a href="http://thechrisellefactor.com/category/chriselle-inc/" title="View all posts in Chriselle Inc." rel="category tag">Chriselle Inc.</a></span>
+                <span class="meta-sep">|</span>
+                <span class="entry-tags">Tagged <a href="http://thechrisellefactor.com/tag/chriselle-lim/" rel="tag">Chriselle Lim</a>, <a href="http://thechrisellefactor.com/tag/chrisellelim/" rel="tag">chrisellelim</a>, <a href="http://thechrisellefactor.com/tag/instagram/" rel="tag">instagram</a>, <a href="http://thechrisellefactor.com/tag/sincerely-jules/" rel="tag">sincerely jules</a>, <a href="http://thechrisellefactor.com/tag/sydne-summer/" rel="tag">sydne summer</a>, <a href="http://thechrisellefactor.com/tag/victorias-secret/" rel="tag">Victorias secret</a></span>
+                <span class="meta-sep">|</span>
+                <span class="entry-comments"><a href="http://thechrisellefactor.com/2012/03/in-a-weeks-adventure/#comments" title="Comment on In A Weeks Adventure">Comments (6)</a></span>
+        </div>
+        <div class="comments">
+            <h3 id="numcomments" class="comment-header">Comments</h3>
+            <ol class="commentlist" id="comments">
+                {$comment_object}
+            </ol>
+        </div>
+</div>

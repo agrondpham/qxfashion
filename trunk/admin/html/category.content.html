@@ -1,0 +1,20 @@
+<div id="admin">
+    <h2>Category - List</h2><br/><br/>
+    <form class="form" action="category.action.php">  
+        <table>
+            <tr>
+                <th>Category Name</th>
+                <th>Action</th>
+            </tr>
+            {$categories}
+        </table>
+        <br/>
+        <div class="text_right">
+            {$pagination_html}
+            <br/><br/>
+            <input class="submit" id="checkout" type="submit" value="Create" />
+        </div>
+        <br/>
+
+    </form>
+</div>

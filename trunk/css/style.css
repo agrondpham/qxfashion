@@ -1,0 +1,175 @@
+
+
+
+h1,h2 {margin-bottom:  15px;}
+
+h1{font-size: 18px;}
+h2{font-size: 16px;}
+h3{ line-height: 150%;}
+body{
+    font-family: Verdana;
+    font-size: 14px;
+
+}
+
+p{
+    line-height: 150%;
+}
+a{
+    color: #48577D; text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#header {
+    width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #eeeeee;
+
+}
+
+#menu {
+    width: 940px;
+    margin: auto;
+
+    background-color: #dddddd;
+    overflow: hidden;
+}
+
+#footer {
+    width: 900px;
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    background-color: #dddddd;
+    text-align: right;
+}
+
+#nav {
+    width: 100%;
+    float: left;
+    margin: 0 0 0 0;
+    padding: 0;
+    list-style: none;
+    background-color: #dddddd;
+    border-bottom: 1px solid #ccc; 
+    border-top: 1px solid #ccc; 
+}
+
+#nav li {
+    float: left; 
+}
+
+#parent{
+    font-size: 14px;
+}
+
+#child{
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+#nav li a {
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #069;
+    border-right: 1px solid #ccc; 
+}
+
+#nav li a:hover {
+    color: #c00;
+    background-color: #fff; 
+}
+
+#container {
+    margin: auto;
+    width: 900px;
+    background-color: #eeeeee;
+    padding: 40px 20px 20px 20px;
+    overflow: hidden;
+}
+
+#main{
+    width:690px;
+    float:left;
+}
+
+#main2 {
+    width:900px;
+
+}
+
+#main table{
+    width:660px;
+}
+
+#main table th{
+    padding: 8px;
+    background-color: #48577D;
+    color: #eee;
+    text-align: left;
+}
+#main table td{
+    padding: 5px;
+}
+
+#sidebar{
+    width:200px;
+    float:left;
+}
+
+#category_list {
+    width: 100%;
+}
+
+#category_list li a {
+    display: block;
+    padding: 6px 0px;
+    text-decoration: none;
+}
+
+#category_list li a:hover {
+    text-decoration: underline;
+}
+
+/* Input Styling */
+
+input, textarea, select{  
+    margin: 5px;
+    padding: 9px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    width: 200px;  
+    background: #FFFFFF;  
+}  
+
+textarea {  
+    width: 400px;  
+    max-width: 400px;  
+    height: 150px;  
+    line-height: 150%;  
+}  
+
+input:hover, textarea:hover,  
+input:focus, textarea:focus {  
+    border-color: #C9C9C9;  
+}  
+
+.form label {  
+    margin-left: 10px;  
+    color: #999999;  
+}  
+
+.submit input {  
+    width: auto;  
+    padding: 9px 15px;  
+    background: #617798;  
+    border: 0;  
+    font-size: 14px;  
+    color: #FFFFFF;  
+}

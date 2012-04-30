@@ -1,0 +1,10 @@
+<tr>
+    <td>{$product->name}</td>
+    <td>{$original_price}$</td>
+    <td>{$product->price}$</td>
+    <td>{$product->discount}%</td>
+    <td><input class="input_cart" type="text" name="quantity[{$product->id}]" value="{$cart->quantity}"/></td>
+    <td>
+        <a href="cart.remove.php?id={$product->id}">Remove</a>
+    </td>
+</tr>

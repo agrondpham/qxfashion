@@ -1,0 +1,34 @@
+.jcarousel-skin-tango .jcarousel-container-horizontal{width:940px; padding:0 65px 0 65px;}
+.jcarousel-list {overflow: hidden;}
+.carousel-container {
+	width:1070px; 
+	position:relative; 
+	height:406px !important;
+	overflow:hidden !important;
+}
+.jcarousel-skin-tango {height:406px;}
+.jcarousel-skin-tango li{
+	background:none; 
+	float:left; 
+	width:220px; 
+	margin-right:20px;
+}
+.jcarousel-next-horizontal,.jcarousel-prev-horizontal{
+	position:absolute;
+	top:125px;
+	width:45px;
+	height:49px;
+	cursor:pointer;
+	z-index:10;
+}
+.jcarousel-next-horizontal{
+	right:0px; 
+	background:url(../images/next.png) -105px top no-repeat;
+}
+.jcarousel-prev-horizontal{
+	left:0px; 
+	background:url(../images/prev.png) left top no-repeat;
+}
+
+
+/*.jcarousel-next-horizontal:hover, .jcarousel-prev-horizontal:hover {background-color:#929d80;}*/

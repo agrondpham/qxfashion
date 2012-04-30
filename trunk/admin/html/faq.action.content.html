@@ -1,0 +1,19 @@
+<div id="admin">
+    <h2>Frequently Asked Question - Create</h2><br/><br/>
+    <form class="form" name="faq_form" method="POST">  
+        <p><label>Question</label></p>
+        <p>  
+            <input class="reg_input_large {$class_name}" type="text" name="name" id="name" value="{$faq->name}" />  
+        </p>
+        <br/>
+        <p><label>Address</label></p>
+        <p> 
+            <textarea class="reg_textarea_large {$class_content}" name="content">{$faq->content}</textarea>                         
+        </p>  
+        <br/>
+        <p>{$errors}</p>
+        <p>  
+            <input class="submit {$class_submit}" type="submit" name="action" value="{$submit_button}" />  
+        </p>  
+    </form> 
+</div>

@@ -1,0 +1,50 @@
+<div id="content2">
+    <div id="shoppingcart">
+
+        <h2>Preview</h2><br/>
+        <h4>Please take time to preview all your items before proceed to enter your credit card.</h4><br/>
+        $cart_edit_form
+        <br/><br/>
+        <h2>Shipping & Credit Card Informations:</h2><br/><br/>
+
+
+        <form class="form" name="card_form" method="POST">  
+            <input type="hidden" name="total" value="{$total}"/>
+            <fieldset>
+                <p><label>Owner Name</label></p>
+                <p><input class="reg_input {$class_name}" type="text" name="name" id="name" value="{$CurrentSession->name}"/></p>
+                <br/>
+                <p><label>Ship Address</label></p>
+                <p> 
+                    <textarea class="reg_textarea {$class_shipaddress}" name="shipaddress">{$CurrentSession->shipaddress}</textarea>                         
+                </p>   
+                <br/>
+                <p>
+                    <input type="radio" class="{$class_card_type}" name="card_type" value="VISA" /> VISA
+                    <input type="radio" class="{$class_card_type}" name="card_type" value="MasterCard" /> Master Card
+                    <input type="radio" class="{$class_card_type}" name="card_type" value="AmericanExpress" /> American Express
+                </p><br/>
+                <p><label>Card Number</label></p>
+                <p><input class="reg_input {$class_card_number}" type="text" name="card_number" id="cardnumber" /></p>
+                <p><label>Name on Card</label></p>
+                <p><input class="reg_input {$class_card_owner_name}" type="text" name="card_owner_name" id="cardname" value="{$CurrentSession->name}" /></p>
+                <p><label>Expiration Date</label>
+
+                    <select name="card_month" class=" {$class_card_month}">
+                        {$month}
+                    </select>
+                    <select name="card_year" class=" {$class_card_year}">
+                        {$year}
+                    </select>
+                </p>  
+            </fieldset>
+            
+            <br/>
+            <p>{$errors}</p>
+            <p><input class="submit" type="submit" name="action" value="Process Payment" /></p>  
+
+        </form>  
+
+
+    </div>
+</div>

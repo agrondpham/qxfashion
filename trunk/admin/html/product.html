@@ -1,0 +1,21 @@
+<div id="sidebar">
+    <strong>Product list:</strong> <br/>
+    {$products}
+</div>
+<br/><br/>
+<form name="create" method="POST">
+    <select name="category_id">
+        {$category_options}
+    </select><br/>
+        Name: <br/>
+        <input type="text" name="name" value="{$product_form->name}" /><br/>
+        Description: <br/>
+    <input type="text" name="description" value="{$product_form->description}" /><br/>
+        Price: <br/>
+    <input type="text" name="price" value="{$product_form->price}" /><br/>
+        Discount: <br/>
+    <input type="text" name="discount" value="{$product_form->discount}" /><br/>
+        Stock: <br/>
+    <input type="text" name="stock" value="{$product_form->stock}" /><br/>
+    <input type="submit" name="create" value="{$button_submit}" /> 
+</form>
