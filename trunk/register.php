@@ -1,16 +1,37 @@
 <?php
+/*
+ * Author: Agrond
+ * 
+ * Publish Date: 28/04/2012
+ * 
+ * Content: Create the Index page 
+ * 
+ * 
+ * History
+ * 
+ * Author       Date            Description
+ * 
+ * 
+ */
+/* ======================================================================
+ *                  Include addition php page
+ * ======================================================================
+ */
+require_once("includes/configuration.php");
+require_once("components/com_helper/function.php");
+require_once("components/com_helper/function.number.php");
+require_once("components/com_io/io.php");
+require_once("components/com_template/template.php");
+require_once("components/com_pagination/pagination.php");
 
-// show off: template
-require_once("configuration.php");
-require_once("includes/io.php");
-require_once("includes/template.php");
-require_once("includes/function.php");
-require_once("includes/category.php");
+//Include object of database
+require_once("libraries/tables/category.php");
+
+
+
 // init variables
-$categories = "";
-$menu_rows = "";
-require_once("includes/list.categories.php");
-
+//$categories = "";
+//$menu_rows = "";
 $errors = "";
 $class_name = "";
 $class_password = "";
@@ -21,15 +42,21 @@ $class_shipaddress = "";
 $class_register = "";
 $repassword = "";
 $customer_password = "";
+
+$objCustomer = new customer();
+$objTemplate = new template("default");
+
+require_once("includes/list.categories.php");
+
+
 // ACTIONs
 if (isset($_POST['register'])) {
 
-    $objCustomer = new customer();
+    
     require_once("includes/customer.action.check.php");
     if (!isset($ErrorMessage)) {
-
         $objCustomer->create();
-        require_once("includes/role.account.php");
+        require_once("libraries/tables/role.account.php");
         $ar = new account_roles();
         $ar->role_id = 3; // 3 is Site User Role
         $ar->customer_id = $objCustomer->id;
@@ -48,11 +75,7 @@ if (isset($_POST['register'])) {
         }
         $errors .= "</ol>";
     }
-} else {
-    $objCustomer = new customer();
 }
-
-$objTemplate = new template("default");
 if ($CurrentSession->id < 1) {
     $customer_password = $objCustomer->get_password();
     eval("\$register = \"" . $objTemplate->get("register.content") . "\";");
@@ -62,12 +85,12 @@ else
 $content = $register;
 
 // cart
-require_once("includes/function.number.php");
-require_once("includes/product.php");
-require_once("includes/cart.php");
+
+require_once("libraries/tables/product.php");
+require_once("libraries/tables/cart.php");
 require_once("includes/list.cart.php");
 // Navigator
-require_once("includes/page.php");
+require_once("libraries/tables/page.php");
 require_once("includes/list.menu.php");
 
 eval("\$cart = \"" . $objTemplate->get("body.cart") . "\";");
@@ -80,5 +103,5 @@ eval("\$index = \"" . $objTemplate->get("index") . "\";");
 // display all
 echo ($index); // can use echo $template->compress($index) to compress size of html
 
-require_once("configuration.end.php");
+require_once("includes/configuration.end.php");
 ?>
